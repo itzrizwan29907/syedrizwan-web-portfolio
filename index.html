@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Syed Rizwan — Data Science • AI • Analytics</title>
+    <meta name="description"
+        content="CSE student at CBIT building toward Data Science, AI, and Analytics. Python, SQL, Power BI." />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Syed Rizwan — Data Science • AI • Analytics" />
+    <meta property="og:description"
+        content="CSE student at CBIT building toward Data Science, AI, and Analytics. Python, SQL, Power BI." />
+    <meta property="og:image" content="https://YOUR-DOMAIN.pages.dev/assets/og-image.png" />
+    <meta property="og:url" content="https://YOUR-DOMAIN.pages.dev/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Syed Rizwan — Data Science • AI • Analytics" />
+    <meta name="twitter:description" content="CSE student at CBIT building toward Data Science, AI, and Analytics." />
+    <meta name="twitter:image" content="https://YOUR-DOMAIN.pages.dev/assets/og-image.png" />
+</head>
+
+<body>
+    <div class="grid-bg" aria-hidden="true"></div>
+    <div class="spotlight" id="spotlight" aria-hidden="true"></div>
+    <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+    <!-- SCROLL RAIL -->
+    <div class="scroll-rail" aria-hidden="true">
+        <div class="scroll-rail-line">
+            <div class="scroll-rail-fill" id="railFill"></div>
+        </div>
+        <div class="scroll-rail-dot" id="railDot"></div>
+    </div>
+
+    <!-- NAV -->
+    <header class="nav">
+        <div class="nav-inner">
+            <a href="#top" class="nav-brand">Syed Rizwan</a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#linkedin">LinkedIn</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round">
+                    <circle cx="12" cy="12" r="4" />
+                    <path
+                        d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+                </svg>
+                <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z" />
+                </svg>
+            </button>
+            <button class="nav-burger" id="navBurger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="top" class="container">
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1 class="fade-up">Syed Rizwan</h1>
+                <p class="tagline fade-up">
+                    I turn messy data into <span class="accent" id="typewriter"></span><span class="caret">|</span>
+                </p>
+                <p class="hero-sub fade-up">
+                    Computer Science student at CBIT, Hyderabad, building toward a career in Data Science, AI, and
+                    Analytics.
+                    I work with Python, SQL, and Power BI to turn raw data into clear, useful insights.
+                    I've also shipped real projects like Academic Relay — a full-stack platform now live and in use.
+                </p>
+                <div class="pills fade-up">
+                    <span class="pill">CSE @ CBIT, 2026–2029</span>
+                    <span class="pill">TG ECET 2026 · 99th State Branch Rank</span>
+                    <span class="pill">Hyderabad, India</span>
+                </div>
+
+                <div class="stats-row fade-up">
+                    <div class="stat">
+                        <div class="stat-num" data-target="3" data-suffix="+">0</div>
+                        <div class="stat-label">Dashboards built</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-num" data-target="2" data-suffix="M+">0</div>
+                        <div class="stat-label">Units analyzed</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-num" data-target="99" data-suffix="th">0</div>
+                        <div class="stat-label">ECET rank</div>
+                    </div>
+                </div>
+
+                <div class="cta-row fade-up">
+                    <a href="#projects" class="btn btn-primary">View projects</a>
+                    <button class="btn btn-ghost" id="copyEmailBtn" data-email="itzrizwan29907@gmail.com">
+                        <span id="copyLabel">Copy email</span>
+                    </button>
+                </div>
+                <div class="inline-links fade-up">
+                    <a href="https://github.com/itzrizwan29907" target="_blank" rel="noopener">GitHub ↗</a>
+                    <a href="https://www.linkedin.com/in/itzrizwan29907/" target="_blank" rel="noopener">LinkedIn ↗</a>
+                </div>
+            </div>
+
+            <aside class="hero-viz fade-up" aria-hidden="true">
+                <svg viewBox="0 0 400 280" preserveAspectRatio="xMidYMid meet">
+                    <!-- Grid lines -->
+                    <g stroke="currentColor" stroke-opacity="0.08" stroke-width="1">
+                        <line x1="40" y1="40" x2="380" y2="40" />
+                        <line x1="40" y1="100" x2="380" y2="100" />
+                        <line x1="40" y1="160" x2="380" y2="160" />
+                        <line x1="40" y1="220" x2="380" y2="220" />
+                    </g>
+
+                    <!-- Bars -->
+                    <g fill="url(#barGrad)">
+                        <rect class="bar" x="60" y="180" width="30" height="60" rx="4" />
+                        <rect class="bar" x="105" y="140" width="30" height="100" rx="4" />
+                        <rect class="bar" x="150" y="100" width="30" height="140" rx="4" />
+                        <rect class="bar" x="195" y="150" width="30" height="90" rx="4" />
+                        <rect class="bar" x="240" y="80" width="30" height="160" rx="4" />
+                        <rect class="bar" x="285" y="120" width="30" height="120" rx="4" />
+                        <rect class="bar" x="330" y="60" width="30" height="180" rx="4" />
+                    </g>
+
+                    <!-- Trend line -->
+                    <polyline class="trend" points="75,180 120,140 165,100 210,150 255,80 300,120 345,60" fill="none"
+                        stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <!-- Trend dots -->
+                    <g fill="var(--accent)">
+                        <circle class="dot-p" cx="75" cy="180" r="4" />
+                        <circle class="dot-p" cx="120" cy="140" r="4" />
+                        <circle class="dot-p" cx="165" cy="100" r="4" />
+                        <circle class="dot-p" cx="210" cy="150" r="4" />
+                        <circle class="dot-p" cx="255" cy="80" r="4" />
+                        <circle class="dot-p" cx="300" cy="120" r="4" />
+                        <circle class="dot-p" cx="345" cy="60" r="6" />
+                    </g>
+                    <!-- Gradient def -->
+                    <defs>
+                        <linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.9" />
+                            <stop offset="100%" stop-color="var(--accent)" stop-opacity="0.25" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+
+                <div class="viz-caption">
+                    <span class="dot"></span>
+                    Deriving insights from data
+                </div>
+
+                <!-- Donut chart (top-left accent) -->
+                <div class="viz-donut" aria-hidden="true">
+                    <svg viewBox="0 0 120 120">
+                        <!-- Background ring -->
+                        <circle cx="60" cy="60" r="42" fill="none" stroke="var(--border)" stroke-width="10" />
+
+                        <!-- Segment 1 — teal (accent) -->
+                        <circle class="seg" cx="60" cy="60" r="42" fill="none" stroke="var(--accent)" stroke-width="10"
+                            stroke-dasharray="132 264" stroke-dashoffset="0" stroke-linecap="round"
+                            transform="rotate(-90 60 60)" />
+
+                        <!-- Segment 2 — violet -->
+                        <circle class="seg" cx="60" cy="60" r="42" fill="none" stroke="#A855F7" stroke-width="10"
+                            stroke-dasharray="79 264" stroke-dashoffset="-140" stroke-linecap="round"
+                            transform="rotate(-90 60 60)" />
+
+                        <!-- Segment 3 — amber -->
+                        <circle class="seg" cx="60" cy="60" r="42" fill="none" stroke="#FBBF24" stroke-width="10"
+                            stroke-dasharray="53 264" stroke-dashoffset="-227" stroke-linecap="round"
+                            transform="rotate(-90 60 60)" />
+
+                        <!-- Center label -->
+                        <text x="60" y="62" text-anchor="middle" fill="var(--text)"
+                            font-family="JetBrains Mono, monospace" font-size="14" font-weight="700">94%</text>
+                        <text x="60" y="76" text-anchor="middle" fill="var(--muted)"
+                            font-family="JetBrains Mono, monospace" font-size="7" letter-spacing="1">ACCURACY</text>
+                    </svg>
+                </div>
+            </aside>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <p class="section-sub">Things I've built and shipped — web apps and data dashboards.</p>
+
+            <div class="filter-tabs" role="tablist" aria-label="Filter projects">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="data">Data</button>
+            </div>
+
+            <div class="project-list" id="projectList">
+
+                <article class="project project-featured" data-category="web" data-project="academic-relay">
+                    <div class="project-main">
+                        <h3>Academic Relay</h3>
+                        <p class="project-tag">Centralized academic resource platform</p>
+                        <p>
+                            A platform that connects students and faculty by bringing circulars, timetables,
+                            assignments, notes, marks, and other resources into one organized place — with
+                            secure authentication and password recovery.
+                        </p>
+                        <div class="pills">
+                            <span class="pill">Python</span>
+                            <span class="pill">Flask</span>
+                            <span class="pill">PostgreSQL</span>
+                            <span class="pill">Supabase</span>
+                            <span class="pill">JavaScript</span>
+                        </div>
+                        <div class="inline-links">
+                            <a href="https://academic-relay.onrender.com" target="_blank" rel="noopener">Live site ↗</a>
+                            <a href="https://github.com/itzrizwan29907/academic-relay" target="_blank"
+                                rel="noopener">Source on GitHub ↗</a>
+                            <button class="text-btn" data-open="academic-relay">More details</button>
+                        </div>
+                    </div>
+                    <div class="project-side">
+                        <ul class="feature-list">
+                            <li><strong>Secure auth</strong> — signup, login, and password recovery.</li>
+                            <li><strong>Centralized resources</strong> — circulars, timetables, assignments, notes,
+                                marks.</li>
+                            <li><strong>Built for real users</strong> — deployed as a working prototype.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <div class="project-grid">
+                    <article class="project" data-category="data" data-project="adidas">
+                        <h3>Adidas Shoes Sales Analysis</h3>
+                        <p class="project-tag">Power BI dashboard</p>
+                        <img src="assets/adidas.png" alt="Adidas sales dashboard" loading="lazy" />
+                        <p>Analyzed 2M+ units sold across regions, sale methods, and product categories.</p>
+                        <div class="pills">
+                            <span class="pill">Power BI</span>
+                            <span class="pill">Power Query</span>
+                            <span class="pill">Data Modeling</span>
+                        </div>
+                        <button class="text-btn" data-open="adidas">More details</button>
+                    </article>
+
+                    <article class="project" data-category="data" data-project="amazon">
+                        <h3>Amazon Sales Analysis</h3>
+                        <p class="project-tag">Power BI dashboard</p>
+                        <img src="assets/amazon.png" alt="Amazon sales dashboard" loading="lazy" />
+                        <p>Explored 725K+ in sales across cities, categories, and states.</p>
+                        <div class="pills">
+                            <span class="pill">Power BI</span>
+                            <span class="pill">Power Query</span>
+                            <span class="pill">Data Modeling</span>
+                        </div>
+                        <button class="text-btn" data-open="amazon">More details</button>
+                    </article>
+
+                    <article class="project" data-category="data" data-project="chocolate">
+                        <h3>Global Chocolate Sales &amp; Shipments</h3>
+                        <p class="project-tag">Power BI dashboard</p>
+                        <img src="assets/chocolate.png" alt="Chocolate sales dashboard" loading="lazy" />
+                        <p>Tracked 6184K revenue and 177K boxes shipped across 6 countries.</p>
+                        <div class="pills">
+                            <span class="pill">Power BI</span>
+                            <span class="pill">Power Query</span>
+                            <span class="pill">Data Modeling</span>
+                        </div>
+                        <button class="text-btn" data-open="chocolate">More details</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+
+            <div class="exp-item">
+                <div class="exp-meta">
+                    <span>May 2025 — Nov 2025</span>
+                    <span>Hyderabad, India</span>
+                </div>
+                <div class="exp-body">
+                    <h3>Industrial Trainee — Resource One IT Solutions India Pvt. Ltd.</h3>
+                    <ul>
+                        <li>Completed a 6-month industrial training in web development, programming, and website
+                            development as part of the Diploma in CSE.</li>
+                        <li>Gained hands-on exposure to a professional IT environment, working on practical projects
+                            and understanding how software solutions are developed in industry.</li>
+                        <li>Successfully completed the training with an <strong>A+</strong> grade — awarded a
+                            Certificate of Completion.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-meta">
+                    <span>2025 — Present</span>
+                    <span>Hyderabad, India</span>
+                </div>
+                <div class="exp-body">
+                    <h3>Founder &amp; Developer — Academic Relay</h3>
+                    <ul>
+                        <li>Designed and built a full-stack academic platform with Flask, PostgreSQL, and Supabase.</li>
+                        <li>Implemented authentication, password recovery, and role-based access for faculty and
+                            students.</li>
+                        <li>Deployed and maintained a working prototype on Render.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACHIEVEMENTS -->
+        <section id="achievements" class="section">
+            <h2>Achievements</h2>
+            <div class="ach-grid">
+                <div class="ach">
+                    <h3>99th State Branch Rank in CSE</h3>
+                    <p>TG ECET 2026 — earned lateral entry into the B.E. programme at CBIT.</p>
+                </div>
+                <div class="ach">
+                    <h3>9.96 / 10 CGPA — Diploma in CSE</h3>
+                    <p>Jyothishmathi Institute of Technology &amp; Science, Karimnagar.</p>
+                </div>
+                <div class="ach">
+                    <h3>Power BI Dashboards</h3>
+                    <p>Built and published interactive dashboards analyzing real sales datasets.</p>
+                </div>
+                <div class="ach">
+                    <h3>Deployed Full-Stack Product</h3>
+                    <p>Academic Relay — live and in use as a working prototype.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- LINKEDIN -->
+        <section id="linkedin" class="section">
+            <h2>From LinkedIn</h2>
+            <p class="section-sub">Recent posts, launches, and milestones from my profile.</p>
+
+            <div class="linkedin-grid">
+                <div class="linkedin-embed">
+                    <iframe
+                        src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7506646688804261890?collapsed=1"
+                        height="627" width="504" frameborder="0" allowfullscreen="" title="Embedded post">
+                    </iframe>
+                </div>
+
+                <div class="linkedin-embed">
+                    <iframe
+                        src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7504861485391872000?collapsed=1"
+                        height="541" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+                </div>
+            </div>
+
+            <div class="linkedin-cta">
+                <div>
+                    <h3>Let's connect</h3>
+                    <p class="muted">I share project launches and milestones on LinkedIn. Send a connection request or a
+                        message.</p>
+                </div>
+                <a href="https://www.linkedin.com/in/itzrizwan29907/" target="_blank" rel="noopener"
+                    class="btn btn-primary">
+                    View my profile ↗
+                </a>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <p class="section-sub">Click a skill to filter projects that use it.</p>
+            <div class="skills-grid">
+                <div>
+                    <h4>Languages</h4>
+                    <div class="pills">
+                        <span class="pill clickable" data-skill="Python">Python</span>
+                        <span class="pill clickable" data-skill="C">C</span>
+                        <span class="pill clickable" data-skill="C++">C++</span>
+                        <span class="pill clickable" data-skill="Java">Java</span>
+                        <span class="pill clickable" data-skill="SQL">SQL</span>
+                        <span class="pill clickable" data-skill="JavaScript">JavaScript</span>
+                    </div>
+                </div>
+                <div>
+                    <h4>Data &amp; Analytics</h4>
+                    <div class="pills">
+                        <span class="pill clickable" data-skill="Power BI">Power BI</span>
+                        <span class="pill clickable" data-skill="Power Query">Power Query</span>
+                        <span class="pill clickable" data-skill="Data Cleaning">Data Cleaning</span>
+                        <span class="pill clickable" data-skill="Data Modeling">Data Modeling</span>
+                    </div>
+                </div>
+                <div>
+                    <h4>Web &amp; Backend</h4>
+                    <div class="pills">
+                        <span class="pill clickable" data-skill="Flask">Flask</span>
+                        <span class="pill clickable" data-skill="HTML">HTML</span>
+                        <span class="pill clickable" data-skill="CSS">CSS</span>
+                        <span class="pill clickable" data-skill="REST APIs">REST APIs</span>
+                    </div>
+                </div>
+                <div>
+                    <h4>Databases &amp; Tools</h4>
+                    <div class="pills">
+                        <span class="pill clickable" data-skill="PostgreSQL">PostgreSQL</span>
+                        <span class="pill clickable" data-skill="Supabase">Supabase</span>
+                        <span class="pill clickable" data-skill="Git">Git</span>
+                        <span class="pill clickable" data-skill="Render">Render</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <div class="edu-item">
+                <div class="edu-meta">Jul 2026 — Jun 2029</div>
+                <div>
+                    <h3>B.E. — Computer Science &amp; Engineering</h3>
+                    <p class="muted">Chaitanya Bharathi Institute of Technology (CBIT)</p>
+                    <p>Joined through lateral entry after ranking 99th in the CSE branch of TG ECET 2026.</p>
+                </div>
+            </div>
+            <div class="edu-item">
+                <div class="edu-meta">Jul 2023 — Apr 2026</div>
+                <div>
+                    <h3>Diploma — Computer Science Engineering</h3>
+                    <p class="muted">Jyothishmathi Institute of Technology &amp; Science, Karimnagar</p>
+                    <p>CGPA: 9.96 / 10</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p class="section-sub">
+                Open to internships, entry-level roles, and collaboration on data or web projects.
+            </p>
+            <div class="contact-grid">
+                <div class="contact-actions">
+                    <a href="mailto:itzrizwan29907@gmail.com" class="btn btn-primary">Send an email</a>
+                    <button class="btn btn-ghost copy-email-btn" data-email="itzrizwan29907@gmail.com">
+                        Copy email
+                    </button>
+                </div>
+                <ul class="contact-list">
+                    <li>
+                        <span class="contact-label">
+                            <svg class="ci" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                                <path d="m2 7 10 6 10-6" />
+                            </svg>
+                            Email
+                        </span>
+                        <a href="mailto:itzrizwan29907@gmail.com">itzrizwan29907@gmail.com</a>
+                    </li>
+                    <li>
+                        <span class="contact-label">
+                            <svg class="ci" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                <path
+                                    d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z" />
+                            </svg>
+                            LinkedIn
+                        </span>
+                        <a href="https://www.linkedin.com/in/itzrizwan29907/" target="_blank"
+                            rel="noopener">itzrizwan29907</a>
+                    </li>
+                    <li>
+                        <span class="contact-label">
+                            <svg class="ci" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                <path
+                                    d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.8 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.3 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z" />
+                            </svg>
+                            GitHub
+                        </span>
+                        <a href="https://github.com/itzrizwan29907" target="_blank" rel="noopener">itzrizwan29907</a>
+                    </li>
+                    <li>
+                        <span class="contact-label">
+                            <svg class="ci" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            Location
+                        </span>
+                        <span>Hyderabad, Telangana, India</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> Syed Rizwan. Built with <span class="heart">❤️</span></p>
+        <p class="footer-clock" id="clock">—</p>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal-backdrop" id="modal" aria-hidden="true">
+        <div class="modal" role="dialog" aria-modal="true">
+            <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5M5 12l7-7 7 7" />
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
